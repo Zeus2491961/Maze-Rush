@@ -73,12 +73,12 @@ function preload(){
     this.load.audio('explode', 'explode.mp3');
     this.load.image('logo', 'logo.png');
     this.load.image('fondoInicio', 'fondo_inicio.png');
-    this.load.image('playerFront', 'playerFront.png');
-    this.load.image('playerLeft', 'playerLeft.png');
-    this.load.image('playerFront2', 'playerFront2.png');
-    this.load.image('playerRight', 'playerRight.png');
-    this.load.image('playerUp', 'playerUp.png');
-    this.load.image('playerDown', 'playerDown.png');
+    this.load.image('playerFront', 'R2D2.Front.png');
+    this.load.image('playerLeft', 'R2D2.Left.png');
+    this.load.image('playerFront2', 'R2D2.Front.2.png');
+    this.load.image('playerRight', 'R2D2.Right.png');
+    this.load.image('playerUp', 'R2D2.Up.png');
+    this.load.image('playerDown', 'R2D2.Down.png');
     this.load.image('mine', 'mine.png');
     this.load.audio('introMusic', 'inicio.mp3');
     this.load.image('startButton', 'startButton.png');
@@ -502,136 +502,7 @@ startButton.on('pointerup', function(){
     });
 
 });
-// Botón izquierda
-        leftButton = this.add.circle(120, 660, 28, 0x8800ff)
-        .setStrokeStyle(3, 0xdd88ff);
-        this.add.text(110, 645, '◀', {
-            fontSize: '28px',
-            fill: '#ffffff'
-        });
 
-        leftButton.setInteractive();
-        leftButton.setAlpha(0.6);
-        leftButton.on('pointerdown', function () {
-
-            leftPressed = true;
-        
-            leftButton.setFillStyle(0xffffff);
-        
-        });
-    
-        leftButton.on('pointerup', function () {
-
-            leftPressed = false;
-        
-            leftButton.setFillStyle(0xaa00ff);
-        
-        });
-    
-        leftButton.on('pointerout', function () {
-            leftPressed = false;
-        });
-    
-    // Botón derecha
-        rightButton = this.add.circle(280, 660, 28, 0x8800ff)
-        .setStrokeStyle(3, 0xdd88ff);
-        this.add.text(272, 645, '▶', {
-            fontSize: '28px',
-            fill: '#ffffff'
-        });
-    
-        rightButton.setInteractive();
-        rightButton.setAlpha(0.6);
-        rightButton.on('pointerdown', function () {
-
-            rightPressed = true;
-        
-            rightButton.setFillStyle(0xffffff);
-        
-        });
-    
-        rightButton.on('pointerup', function () {
-
-            rightPressed = false;
-        
-            rightButton.setFillStyle(0xaa00ff);
-        
-        });
-    
-        rightButton.on('pointerout', function () {
-
-            rightPressed = false;
-        
-            rightButton.setFillStyle(0xaa00ff);
-        
-        });
-    // Botón arriba
-        upButton = this.add.circle(200, 625, 28, 0x8800ff)
-        .setStrokeStyle(3, 0xdd88ff);
-        this.add.text(192, 610, '▲', {
-            fontSize: '28px',
-            fill: '#ffffff'
-        });
-
-        upButton.setInteractive();
-        upButton.setAlpha(0.6);
-        upButton.on('pointerdown', function () {
-
-            upPressed = true;
-        
-            upButton.setFillStyle(0xffffff);
-        
-        });
-    
-        upButton.on('pointerup', function () {
-
-            upPressed = false;
-        
-            upButton.setFillStyle(0xaa00ff);
-        
-        });
-    
-        upButton.on('pointerout', function () {
-
-            upPressed = false;
-        
-            upButton.setFillStyle(0xaa00ff);
-        
-        });
-
-    // Botón abajo
-        downButton = this.add.circle(200, 690, 28, 0x8800ff)
-        .setStrokeStyle(3, 0xdd88ff);
-        this.add.text(192, 675, '▼', {
-            fontSize: '28px',
-            fill: '#ffffff'
-        });
-
-        downButton.setInteractive();
-        downButton.setAlpha(0.6);
-        downButton.on('pointerdown', function () {
-
-            downPressed = true;
-        
-            downButton.setFillStyle(0xffffff);
-        
-        });
-    
-        downButton.on('pointerup', function () {
-
-            downPressed = false;
-        
-            downButton.setFillStyle(0xaa00ff);
-        
-        });
-    
-        downButton.on('pointerout', function () {
-
-            downPressed = false;
-        
-            downButton.setFillStyle(0xaa00ff);
-        
-        });
 
     // Cronómetro
         this.time.addEvent({
